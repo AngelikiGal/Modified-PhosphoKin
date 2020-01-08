@@ -1,5 +1,5 @@
 # Modified-PhosphoKin
-A modification of the PhosphoKin tool (https://github.com/AngelikiGal/PhosphoKin) to identify deleterious missense cancer mutations that could obstruct the predicted phosphorylation of the sequence of laminin γ1-chain (LAMC1)
+A modification of the PhosphoKin tool (https://github.com/AngelikiGal/PhosphoKin) to identify deleterious missense cancer mutations that could obstruct the predicted phosphorylation of the sequence of laminin γ1-chain (LAMC1).
 
 Authors: Panagiota-Aggeliki Galliou (ag.gal.work@gmail.com), Kleio-Maria Verrou (kleioverrou@yahoo.com)  
 
@@ -38,7 +38,7 @@ PhosphoKin is a tool written in Python 3 and, therefore, it can be run in most o
 
 ## Needed files
 
-PhosphoKin uses as input five .txt files; one containing LAMC1 in fast format, one containing the LAMC1 active sites, one containing the experimentally assigned phosphorylated residues in LAMC1 and one containing the kinases along with their recognition motifs and one all LAMC1 mutations found in cancer as downloaded by CBioPortal. 
+PhosphoKin uses as input five .txt files; one containing LAMC1 in fast format, one containing the LAMC1 active sites, one containing the experimentally assigned phosphorylated residues in LAMC1 and one containing the kinases along with their recognition motifs and one all LAMC1 mutations found in cancer as downloaded by CBioPortal. The input files used are uploaded here: https://www.dropbox.com/sh/5p0b4fkri1uisbl/AABm9MqYvhaxEinaPKVTgfMGa?dl=0.
 
 ### 1) The Active Sites file:
 The file must have the following format: Start_of_active_site_1 - End_of_active_site_1, Start_of_active_site_2 - End_of_active_site_2, etc.
@@ -62,14 +62,14 @@ e.g.
 >ATM Kinase:pSQ-[P/L/I/M]X[L/I/E/D]pSQ-LpSQE
    
 ### 4) The Protein Sequence file:
-The file must have a faste format (https://en.wikipedia.org/wiki/FASTA_format)
+The file must have a faste format (https://en.wikipedia.org/wiki/FASTA_format).
 
 e.g.
 
 >`>`sp|P11047|LAMC1_HUMAN Laminin subunit gamma-1 OS=Homo sapiens OX=9606 GN=LAMC1 PE=1 SV=3 MRGSHRAAPALRPRGRLWPVLAVLAAAAAAGCAQAAMDECTDEGGRPQRCMPEFVNAAFN VTVVATNTCGTPPEEYCVQTGVTGVTKSCHLCDAGQPHLQHGAAFLTDYNNQADTTWWQS QTMLAGVQYPSSINLTLHLGKAFDITYVRLKFHTSRPESFAIYKRTREDGPWIPYQYYSG SCENTYSKANRGFIRTGGDEQQALCTDEFSDISPLTGGNVAFSTLEGRPSAYNFDNSPVL
 
 ### 5) The Mutations file:
-The file should have a specific format as downloaded from CBioPortal. The input file used can be used as a template and it is uploaded here: https://www.dropbox.com/s/e2paiz1jvhc8t07/LAMC1-Mutations.xlsx?dl=0
+The file should have a specific format as downloaded from CBioPortal. The input file used can be used as a template and it is uploaded here: https://www.dropbox.com/s/e2paiz1jvhc8t07/LAMC1-Mutations.xlsx?dl=0.
 
 # In Terminal
 
@@ -83,20 +83,20 @@ As output the tool produces five .txt files:
 ### 1) One for the prediction of phosphorylation sites and phosphorylated residues in LAMC1:
 LAMC1-Kinases_Motifs.txt
 
-### 2) One for the identification of possibly responsible kinases for the experimentally observed phosphorylated residues in LAMC1
+### 2) One for the identification of possibly responsible kinases for the experimentally observed phosphorylated residues in LAMC1:
 LAMC1-Possily_responsible_kinases.txt
 
-### 3) One for the categorization of phosphorylated residues according to their location relatively to active sites 
+### 3) One for the categorization of phosphorylated residues according to their location relatively to active sites:
 LAMC1-Categorization_of_phosphorylations_comparatively_to_active_sites.txt
 
-### 4) One for the association of kinases with active sites
+### 4) One for the association of kinases with active sites:
 LAMC1-Link_ActiveSite_with_kinases.txt
 
 >_For the analysis of the output, please read the reference of Phosphokin:_
 >
 >_Galliou, P.A., Verrou, K.M., 2019. An in silico method for studying the phosphorylation in association to active sites. Aristotle Biomedical Journal 1, 48–59._
 
-### 5) One for the LAMC1 deleterious missense mutations that could obstruct the predicted phosphorylation of LAMC1
+### 5) One for the LAMC1 deleterious missense mutations that could obstruct the predicted phosphorylation of LAMC1:
 LAMC1-Mutations_disturbing_Phosphorylations.xls
 
 # Got a Question?
